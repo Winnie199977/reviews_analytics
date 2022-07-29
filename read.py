@@ -11,5 +11,5 @@ print('檔案讀取完了，總共有', len(data), '筆資料')
 sum_length = 0
 for d in data:
 	sum_length += len(d)
-average = sum_length / 1000000
+average = sum_length / len(data)
 print('留言的平均長度為:', average)
