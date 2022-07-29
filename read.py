@@ -30,3 +30,10 @@ for d in data:
 		good.append(d)
 
 print('留言中有提到"good"的總共有:', len(good), '筆')
+
+#清單快寫法
+good = [d for d in data if 'good' in d]
+# 		d 表示要寫進清單裡面的值
+
+#是否有提到 'bad'
+bad = ['bad' in d for d in data]
