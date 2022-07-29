@@ -22,3 +22,11 @@ for d in data:
 		new.append(d)
 
 print('留言長度小於100的總共有 : ', len(new), '筆')
+
+#取出留言中有'good' 的留言
+good = []
+for d in data:
+	if 'good' in d:
+		good.append(d)
+
+print('留言中有提到"good"的總共有:', len(good), '筆')
